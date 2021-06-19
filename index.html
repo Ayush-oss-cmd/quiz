@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <div class="center" id="cent">
+        <h2>Welcome to the Millionaire Quiz</h2>
+        <input type="text" placeholder="Your Name" id="profile" >
+        <button class="large" onClick="getName();">
+            
+             <a href="#quiz">Start Quiz?</a>
+
+
+        </button>
+
+    </div>
+    <div class="quiz-area" id="quiz">
+
+        <div class="container">
+             <h1 class="question">Who is the lead actor in movie "Gone Girl"?</h1>
+
+             <ul class="answers">
+                    <li>
+                        <input type="radio" name="quiz" id="opt1" class="option">
+                        <label for="opt1" id="option-1">Ben Affleck</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="quiz" id="opt2" class="option">
+                        <label for="opt2" id="option-2">Tom Hiddleston</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="quiz" id="opt3" class="option">
+                        <label for="opt3" id="option-3">Chris Evans</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="quiz" id="opt4" class="option">
+                        <label for="opt4" id="option-4">Henry Cavill</label>
+                    </li>
+             </ul>
+
+           
+                <button class="submit">Lock Answer</button>
+                  
+                <div class="scoreArea" id="score">
+
+                </div>
+                <br>
+            
+                <button onClick="refresh();" class="small"><a href="#cent">Restart</a></button>
+            
+            
+        </div>
+         
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
